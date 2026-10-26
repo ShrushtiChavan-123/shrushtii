@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Spice & Sizzle - delicious flavors and freshly prepared meals in Pune.">
+  <title>Spice &amp; Sizzle | Restaurant Menu</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- 1. NAVIGATION BAR -->
+  <header class="navbar">
+    <div class="container nav-inner">
+      <a href="#home" class="logo">🍽️ Spice &amp; Sizzle</a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation menu" aria-expanded="false">☰</button>
+      <nav class="nav-links" id="navLinks" aria-label="Main navigation">
+        <a href="#home">Home</a>
+        <a href="#menu">Menu</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+        <a href="#menu" class="btn btn-small">Explore Menu</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- 2. HERO SECTION -->
+    <section class="hero" id="home">
+      <div class="container hero-content">
+        <p class="eyebrow light">Pune's Favorite Table</p>
+        <h1>Good Food. Great Mood.</h1>
+        <p class="hero-text">Discover delicious flavors, freshly prepared meals, and memorable dining experiences.</p>
+        <div class="hero-buttons">
+          <a href="#menu" class="btn">Explore Our Menu</a>
+          <a href="#contact" class="btn btn-outline">Contact Us</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3 & 4. FOOD MENU WITH FILTERS -->
+    <section class="section" id="menu">
+      <div class="container">
+        <p class="eyebrow center">Our Menu</p>
+        <h2 class="center">Taste the Tradition</h2>
+        <p class="center note">Sample dishes and prices for a demonstration website.</p>
+
+        <div class="filters" role="group" aria-label="Menu categories">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="starters">Starters</button>
+          <button class="filter-btn" data-filter="main">Main Course</button>
+          <button class="filter-btn" data-filter="desserts">Desserts</button>
+          <button class="filter-btn" data-filter="beverages">Beverages</button>
+        </div>
+
+        <div class="menu-grid">
+          <!-- STARTERS -->
+          <article class="card dish" data-category="starters">
+            <img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=500&q=70" alt="Crispy veg spring rolls with dipping sauce" loading="lazy">
+            <div class="card-body"><span class="tag veg">Veg</span><h3>Veg Spring Rolls</h3><p>Crispy rolls filled with fresh vegetables.</p><span class="price">₹149</span></div>
+          </article>
+          <article class="card dish" data-category="starters">
+            <img src="https://images.unsplash.com/photo-1567188040759-fb8a883dc6d8?auto=format&fit=crop&w=500&q=70" alt="Grilled paneer tikka skewers" loading="lazy">
+            <div class="card-body"><span class="tag veg">Veg</span><h3>Paneer Tikka</h3><p>Smoky grilled paneer marinated in spices.</p><span class="price">₹199</span></div>
+          </article>
+          <article class="card dish" data-category="starters">
+            <img src="https://images.unsplash.com/photo-1599487488170-d11ec9c172f0?auto=format&fit=crop&w=500&q=70" alt="Juicy chicken tikka pieces" loading="lazy">
+            <div class="card-body"><span class="tag nonveg">Non-Veg</span><h3>Chicken Tikka</h3><p>Tender chicken grilled in a tandoor-style marinade.</p><span class="price">₹249</span></div>
+          </article>
+
+          <!-- MAIN COURSE -->
+          <article class="card dish" data-category="main">
+            <img src="https://images.unsplash.com/photo-1631452180519-c014fe946bc7?auto=format&fit=crop&w=500&q=70" alt="Paneer butter masala in a bowl" loading="lazy">
+            <div class="card-body"><span class="tag veg">Veg</span><h3>Paneer Butter Masala</h3><p>Soft paneer in a rich, creamy tomato gravy.</p><span class="price">₹249</span></div>
+          </article>
+          <article class="card dish" data-category="main">
+            <img src="https://images.unsplash.com/photo-1642821373181-696a54913e93?auto=format&fit=crop&w=500&q=70" alt="Fragrant vegetable biryani" loading="lazy">
+            <div class="card-body"><span class="tag veg">Veg</span><h3>Veg Biryani</h3><p>Aromatic basmati rice cooked with vegetables and spices.</p><span class="price">₹199</span></div>
+          </article>
+          <article class="card dish" data-category="main">
+            <img src="https://images.unsplash.com/photo-1589302168068-964664d93dc0?auto=format&fit=crop&w=500&q=70" alt="Chicken biryani served in a pot" loading="lazy">
+            <div class="card-body"><span class="tag nonveg">Non-Veg</span><h3>Chicken Biryani</h3><p>Layered rice and spiced chicken, slow-cooked.</p><span class="price">₹279</span></div>
+          </article>
+          <article class="card dish" data-category="main">
+            <img src="https://images.unsplash.com/photo-1546833999-b9f581a1996d?auto=format&fit=crop&w=500&q=70" alt="Dal tadka with tempering" loading="lazy">
+            <div class="card-body"><span class="tag veg">Veg</span><h3>Dal Tadka</h3><p>Yellow lentils tempered with garlic and ghee.</p><span class="price">₹179</span></div>
+          </article>
+          <article class="card dish" data-category="main">
+            <img src="https://images.unsplash.com/photo-1626074353765-517a681e40be?auto=format&fit=crop&w=500&q=70" alt="Soft butter naan bread" loading="lazy">
+            <div class="card-body"><span class="tag veg">Veg</span><h3>Butter Naan</h3><p>Soft, fluffy naan brushed with butter.</p><span class="price">₹49</span></div>
+          </article>
+
+          <!-- DESSERTS -->
+          <article class="card dish" data-category="desserts">
+            <img src="https://images.unsplash.com/photo-1606313564200-e75d5e30476c?auto=format&fit=crop&w=500&q=70" alt="Warm chocolate brownie" loading="lazy">
+            <div class="card-body"><span class="tag veg">Veg</span><h3>Chocolate Brownie</h3><p>Rich, fudgy brownie baked fresh.</p><span class="price">₹129</span></div>
+          </article>
+          <article class="card dish" data-category="desserts">
+            <img src="https://images.unsplash.com/photo-1666190092689-e3968aa0c32c?auto=format&fit=crop&w=500&q=70" alt="Gulab jamun in sugar syrup" loading="lazy">
+            <div class="card-body"><span class="tag veg">Veg</span><h3>Gulab Jamun</h3><p>Soft milk dumplings soaked in sweet syrup.</p><span class="price">₹89</span></div>
+          </article>
+          <article class="card dish" data-category="desserts">
+            <img src="https://images.unsplash.com/photo-1563805042-7684c019e1cb?auto=format&fit=crop&w=500&q=70" alt="Scoops of vanilla ice cream" loading="lazy">
+            <div class="card-body"><span class="tag veg">Veg</span><h3>Vanilla Ice Cream</h3><p>Creamy classic vanilla, perfectly chilled.</p><span class="price">₹99</span></div>
+          </article>
+
+          <!-- BEVERAGES -->
+          <article class="card dish" data-category="beverages">
+            <img src="https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?auto=format&fit=crop&w=500&q=70" alt="Fresh lime soda in a glass" loading="lazy">
+            <div class="card-body"><span class="tag veg">Veg</span><h3>Fresh Lime Soda</h3><p>Zesty lime with sparkling soda, sweet or salted.</p><span class="price">₹79</span></div>
+          </article>
+          <article class="card dish" data-category="beverages">
+            <img src="https://images.unsplash.com/photo-1517701550927-30cf4ba1dba5?auto=format&fit=crop&w=500&q=70" alt="Iced cold coffee" loading="lazy">
+            <div class="card-body"><span class="tag veg">Veg</span><h3>Cold Coffee</h3><p>Chilled, creamy coffee blended with ice.</p><span class="price">₹129</span></div>
+          </article>
+          <article class="card dish" data-category="beverages">
+            <img src="https://images.unsplash.com/photo-1571934811356-5cc061b6821f?auto=format&fit=crop&w=500&q=70" alt="Steaming cup of masala chai" loading="lazy">
+            <div class="card-body"><span class="tag veg">Veg</span><h3>Masala Chai</h3><p>Hot milk tea brewed with aromatic spices.</p><span class="price">₹49</span></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. SPECIAL OFFER (sample) -->
+    <section class="offer">
+      <div class="container">
+        <h2>Good Food, Better Moments.</h2>
+        <p>Enjoy 10% off your first visit.</p>
+        <a href="#menu" class="btn btn-light">View Menu</a>
+        <small>*Sample offer for this demo website.</small>
+      </div>
+    </section>
+
+    <!-- 6. ABOUT US -->
+    <section class="section" id="about">
+      <div class="container about-grid">
+        <div class="img-box">
+          <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=800&q=70" alt="Warm and welcoming restaurant dining area" loading="lazy">
+        </div>
+        <div>
+          <p class="eyebrow">About Us</p>
+          <h2>Cooked with care, served with a smile</h2>
+          <p>At Spice &amp; Sizzle, every dish starts with fresh ingredients and ends with a happy table. Our kitchen focuses on quality food made the traditional way, our team offers friendly service, and our dining room is a warm, welcoming place to share good moments with family and friends.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. WHY CHOOSE US -->
+    <section class="section alt">
+      <div class="container">
+        <p class="eyebrow center">Why Choose Us</p>
+        <h2 class="center">The Spice &amp; Sizzle Difference</h2>
+        <div class="features">
+          <div class="card feature"><span aria-hidden="true">🥬</span><h3>Fresh Ingredients</h3><p>Fresh produce and spices, every day.</p></div>
+          <div class="card feature"><span aria-hidden="true">👨‍🍳</span><h3>Expert Chefs</h3><p>Skilled cooks who love their craft.</p></div>
+          <div class="card feature"><span aria-hidden="true">⚡</span><h3>Quick Service</h3><p>Hot food served without long waits.</p></div>
+          <div class="card feature"><span aria-hidden="true">🛋️</span><h3>Comfortable Dining</h3><p>Cozy seating for every occasion.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 8. CONTACT -->
+    <section class="section" id="contact">
+      <div class="container">
+        <p class="eyebrow center">Contact</p>
+        <h2 class="center">Visit or Get in Touch</h2>
+        <div class="contact-grid">
+          <div>
+            <p><strong>📍 Sample Address:</strong><br>45 Food Street, Camp, Pune, Maharashtra 411001</p>
+            <p><strong>🕚 Opening Hours:</strong><br>Monday to Sunday, 11:00 AM–11:00 PM</p>
+            <p><strong>📞 Phone (placeholder):</strong> +91 00000 00000</p>
+            <p><strong>✉️ Email (placeholder):</strong> hello@example.com</p>
+          </div>
+          <form id="contactForm" class="card form" novalidate>
+            <label for="name">Name</label>
+            <input type="text" id="name" placeholder="Your name">
+            <span class="error" id="nameError"></span>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="you@example.com">
+            <span class="error" id="emailError"></span>
+
+            <label for="message">Message</label>
+            <textarea id="message" rows="4" placeholder="Write your message"></textarea>
+            <span class="error" id="messageError"></span>
+
+            <button type="submit" class="btn">Send Message</button>
+            <p class="note">Demo form only: it does not send a real email.</p>
+            <p id="formSuccess" class="success" role="status"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- 9. FOOTER -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <a href="#home" class="logo light">🍽️ Spice &amp; Sizzle</a>
+        <p>Where every bite tells a story.</p>
+        <div class="social" aria-label="Social media placeholders">
+          <a href="#home" aria-label="Facebook placeholder">f</a>
+          <a href="#home" aria-label="Instagram placeholder">in</a>
+          <a href="#home" aria-label="Twitter placeholder">t</a>
+        </div>
+      </div>
+      <div class="foot-links">
+        <h4>Quick Links</h4>
+        <a href="#home">Home</a><a href="#menu">Menu</a><a href="#about">About</a><a href="#contact">Contact</a>
+      </div>
+      <div>
+        <h4>Opening Hours</h4>
+        <p>Mon–Sun<br>11:00 AM–11:00 PM</p>
+      </div>
+    </div>
+    <p class="copyright">© <span id="year"></span> Spice &amp; Sizzle. A demo website for a college project.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
